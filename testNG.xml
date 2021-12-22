@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="InternetBanking_Automation1">
+
+	<listeners>
+		<listener class-name="com.internetBanking.Utilities.Reporting" />
+	</listeners>
+	
+	<test name="BankingAPP Test">
+	
+		<parameter name="browser" value="chrome" />
+		
+		<classes>
+			<class name="com.internetBanking.testCases.TC_LoginTest_001" />
+			<!--  class name="com.internetBanking.testCases.TC_LoginTest_DDT_002" />-->
+			<class name="com.internetBanking.testCases.TC_AddNewCustomerTest" />
+		</classes>
+		
+	</test>
+
+</suite>
